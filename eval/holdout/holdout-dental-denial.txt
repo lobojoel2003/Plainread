@@ -1,0 +1,48 @@
+Brightcoast Dental Benefits, Inc.
+Utilization Review Department
+P.O. Box 4410, Marlowe Crest, FW 30551
+Member Services: 1-866-555-0158 | TTY: 1-866-555-0159 | Fax: (414) 555-0160
+
+June 3, 2026
+
+ROSALIND ADEYEMI-PRATT
+82 KESTREL LANE
+MARLOWE CREST FW 30557
+
+NOTICE OF ADVERSE BENEFIT DETERMINATION - PRE-TREATMENT ESTIMATE
+
+Member ID:                  BCD-448820193
+Group Number:               G-07715
+Patient:                    Rosalind Adeyemi-Pratt (Subscriber)
+Patient Date of Birth:      11/02/1988
+Estimate Number:            PTE-2026-0603-77812
+Treating Dentist:           Harlan Okonkwo, DDS
+Estimate Received:          May 27, 2026
+
+Dear Member:
+
+Brightcoast Dental Benefits, Inc. has completed its review of the pre-treatment estimate submitted on your behalf by the treating dentist named above. Upon review of the information provided, it has been determined that benefits are not available for the proposed services under the terms of your group dental plan, for the reasons set forth below. This notice is not a bill, and no payment is due at this time.
+
+PROC    TOOTH   DESCRIPTION                         SUBMITTED FEE   DETERMINATION
+D2740   19      Crown, porcelain/ceramic                $1,385.00   Not covered (41)
+D2950   19      Core buildup, including any pins          $285.00   Not covered (41)
+                TOTAL SUBMITTED                         $1,670.00
+
+Reason Code 41 - Frequency Limitation: Benefits for crowns and associated core buildups are limited to one (1) per tooth in any sixty (60) month period. Plan records indicate that a crown was placed on tooth 19 and paid under your plan for a date of service of February 14, 2022.
+
+Should you elect to proceed with the proposed treatment, you will be responsible for the full submitted fees of $1,670.00. Your calendar-year benefit maximum is $1,500.00, of which $1,140.00 remains available for other covered services.
+
+YOUR RIGHT TO APPEAL
+You have the right to appeal this determination. A request for appeal must be submitted in writing within sixty (60) days of the date of this notice. Your appeal should include a copy of this notice, any X-rays or clinical notes from your dentist, and any other information you believe supports your request. Appeals may be mailed to Brightcoast Dental Benefits, Attn: Appeals Unit, P.O. Box 4415, Marlowe Crest, FW 30551, faxed to (414) 555-0160, or sent by email to appeals@brightcoastdental.example. Your dentist may also file an appeal on your behalf. Appeals are reviewed by a licensed dentist who was not involved in the original determination, and a written decision will be issued within thirty (30) days of our receipt of your appeal.
+
+If an appeal is not received within the time allowed, this determination will become final and you may lose your right to further review.
+
+Upon request and free of charge, you may receive reasonable access to, and copies of, all documents, records, and other information relevant to your request for benefits. Information about appeals is also available at brightcoastdental.example/appeals.
+
+If you need help understanding this notice or need it in another language or format, call Member Services at 1-866-555-0158. Language assistance is available at no cost to you.
+
+Sincerely,
+
+Utilization Review Department
+Brightcoast Dental Benefits, Inc.
+Dental Consultant: Marguerite Ferreira-Lund, DMD

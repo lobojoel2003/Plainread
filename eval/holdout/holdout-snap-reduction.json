@@ -1,0 +1,22 @@
+{
+  "id": "holdout-snap-reduction",
+  "description": "Food assistance benefit decrease notice: new lower amount starts on a date, fair hearing within 90 days, benefits continue if hearing asked within 10 days, certification end date",
+  "letter_type": "benefits",
+  "today": "2026-08-13",
+  "letter_date": "2026-08-10",
+  "sender": "Family Nutrition Services",
+  "dates": [
+    {"date": "2026-09-01", "kind": "starts"},
+    {"date": "2026-11-08", "kind": "respond_by", "relative": true},
+    {"date": "2026-08-20", "kind": "respond_by", "relative": true},
+    {"date": "2027-01-31", "kind": "ends"}
+  ],
+  "amounts": [412.00, 287.00, 2140.00, 1118.00, 100.00],
+  "phones": ["6085550170", "6085550173", "6085550171", "6085550172", "8005550174"],
+  "emails": ["fairhearings@arvenne-dfns.example"],
+  "websites": ["arvenne-dfns.example/hearings"],
+  "references": ["FN-0048211-6", "NOA-26-08-104552"],
+  "actions": [["hearing", "90"], ["report", "change"]],
+  "consequences": [["reduced", "10-day"]],
+  "rights": [["right", "fair", "hearing"], ["lawyer"], ["free", "legal"], ["interpreter"]]
+}

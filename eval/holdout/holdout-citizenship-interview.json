@@ -1,0 +1,20 @@
+{
+  "id": "holdout-citizenship-interview",
+  "description": "Fictional naturalization interview notice with fingerprint appointment, documents checklist, reschedule rules counted from the interview (not labelled)",
+  "letter_type": "immigration",
+  "today": "2026-02-06",
+  "letter_date": "2026-02-03",
+  "sender": "Citizenship and Residency",
+  "dates": [
+    {"date": "2026-03-16", "kind": "appointment"},
+    {"date": "2026-02-24", "kind": "appointment"}
+  ],
+  "amounts": [],
+  "phones": ["8005550177", "8005550178"],
+  "emails": [],
+  "websites": ["nocrs.example/reschedule"],
+  "references": ["NCR-2025-61448203", "F-2195-54087"],
+  "actions": [["appear", "interview"], ["appear", "fingerprints"], ["bring", "following"]],
+  "consequences": [["closed", "denied"], ["documents", "denied"]],
+  "rights": [["reschedule", "once"], ["attorney"], ["interpreter"], ["accommodation", "disability"]]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "holdout-medicare-like-premium",
+  "description": "Fictional state health plan notice: past-due premium with grace period end date, cancellation date, premium increase effective date, plan-change deadline without a year",
+  "letter_type": "health_insurance",
+  "today": "2026-09-21",
+  "letter_date": "2026-09-15",
+  "sender": "Wrenfield",
+  "dates": [
+    {"date": "2026-10-31", "kind": "payment_due"},
+    {"date": "2026-11-01", "kind": "ends"},
+    {"date": "2027-01-01", "kind": "starts"},
+    {"date": "2026-12-15", "kind": "respond_by"}
+  ],
+  "amounts": [138.00, 276.00, 164.50, 41250.00],
+  "phones": ["8445550186", "8445550187"],
+  "emails": ["premiums@wrenfieldplan.example"],
+  "websites": ["wrenfieldplan.example", "wrenfieldplan.example/pay"],
+  "references": ["WHP-60321874-01"],
+  "actions": [["pay", "premiums"], ["choose", "plan"]],
+  "consequences": [["payment", "cancelled"], ["nothing", "remain"]],
+  "rights": [["premium", "assistance"], ["interpreter"], ["right", "appeal"]]
+}

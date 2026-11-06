@@ -1,0 +1,21 @@
+{
+  "id": "housing-recertification",
+  "description": "Public housing annual recertification: interview appointment, documents, form due within 10 business days, rent change date",
+  "letter_type": "housing",
+  "today": "2026-08-07",
+  "letter_date": "2026-08-03",
+  "sender": "Lakemont Housing",
+  "dates": [
+    {"date": "2026-08-18", "kind": "appointment"},
+    {"date": "2026-08-17", "kind": "respond_by", "relative": true},
+    {"date": "2026-10-01", "kind": "starts"}
+  ],
+  "amounts": [412.00, 86.00, 50.00],
+  "phones": ["3125550170", "3125550171", "3125550172"],
+  "emails": ["recert@lakemontha.example"],
+  "websites": [],
+  "references": ["LHA-T-0058821"],
+  "actions": [["return", "personal declaration"], ["bring", "documents"], ["call", "reschedule"]],
+  "consequences": [["terminate"]],
+  "rights": [["reasonable accommodation"], ["interpreter"], ["informal hearing"]]
+}

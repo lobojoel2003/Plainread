@@ -1,0 +1,22 @@
+{
+  "id": "court-traffic-ticket",
+  "description": "Traffic court courtesy notice with dates in mixed formats (MM/DD/YYYY, ISO, ordinal)",
+  "letter_type": "court",
+  "today": "2026-04-10",
+  "letter_date": "2026-04-06",
+  "sender": "Ashgrove County",
+  "dates": [
+    {"date": "2026-04-27", "kind": "payment_due"},
+    {"date": "2026-04-27", "kind": "respond_by"},
+    {"date": "2026-05-12", "kind": "hearing"},
+    {"date": "2026-06-03", "kind": "respond_by"}
+  ],
+  "amounts": [50.00, 155.00, 33.00, 238.00, 64.00, 300.00],
+  "phones": ["4015550124", "4015550125", "4015550126"],
+  "emails": [],
+  "websites": ["ashgrovecourts.example/traffic"],
+  "references": ["AG4471093", "TR-26-0019827"],
+  "actions": [["one of the following"], ["pay", "full amount"], ["not guilty plea", "return"], ["appear", "arraignment"], ["complete", "traffic school course"]],
+  "consequences": [["civil assessment"]],
+  "rights": [["eligible", "traffic school"], ["right", "not guilty"], ["ability to pay"], ["interpreters"]]
+}

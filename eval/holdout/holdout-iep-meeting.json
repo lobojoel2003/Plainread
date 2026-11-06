@@ -1,0 +1,20 @@
+{
+  "id": "holdout-iep-meeting",
+  "description": "School special-education IEP annual review meeting invitation with RSVP date printed without a year and parent rights",
+  "letter_type": "school",
+  "today": "2026-09-24",
+  "letter_date": "2026-09-21",
+  "sender": "Hollowmere Unified School District",
+  "dates": [
+    {"date": "2026-10-08", "kind": "appointment"},
+    {"date": "2026-10-01", "kind": "respond_by"}
+  ],
+  "amounts": [],
+  "phones": ["7205550145", "7205550146", "8665550148"],
+  "emails": ["habara@hollowmereusd.example"],
+  "websites": ["hollowmereusd.example", "hollowmereusd.example/parentrights"],
+  "references": ["4410298"],
+  "actions": [["return", "form"], ["contact", "time"]],
+  "consequences": [["held", "without"]],
+  "rights": [["right", "participate"], ["bring", "advocate"], ["interpreter"], ["copy", "draft"], ["audio-record"], ["free", "help"], ["mediation"]]
+}

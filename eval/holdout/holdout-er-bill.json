@@ -1,0 +1,19 @@
+{
+  "id": "holdout-er-bill",
+  "description": "Emergency room patient statement with itemized charge table, minimum payment option, pay-by date, collections warning and financial assistance",
+  "letter_type": "medical_bill",
+  "today": "2026-05-18",
+  "letter_date": "2026-05-14",
+  "sender": "Quillon Valley",
+  "dates": [
+    {"date": "2026-06-08", "kind": "payment_due"}
+  ],
+  "amounts": [905.00, 75.00, 1842.00, 2310.00, 186.00, 94.50, 4432.50, 2915.20, 612.30, 1000.00],
+  "phones": ["3095550137", "3095550138", "3095550139"],
+  "emails": ["pfs@qvmc-billing.example"],
+  "websites": ["qvmc-billing.example", "qvmc-billing.example/assistance"],
+  "references": ["30098812", "ED-260422-0457"],
+  "actions": [["pay", "minimum"], ["insurance", "call"], ["account", "check"]],
+  "consequences": [["collection", "agency"]],
+  "rights": [["qualify", "financial"], ["language", "free"]]
+}

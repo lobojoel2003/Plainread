@@ -1,0 +1,20 @@
+{
+  "id": "debt-court-garnishment",
+  "description": "Creditor attorney's notice of continuing wage garnishment with a 20-day exemption claim / hearing request deadline",
+  "letter_type": "debt",
+  "today": "2026-09-11",
+  "letter_date": "2026-09-08",
+  "sender": "Kessler",
+  "dates": [
+    {"date": "2026-09-28", "kind": "respond_by", "relative": true},
+    {"date": "2026-09-29", "kind": "starts"}
+  ],
+  "amounts": [4312.55, 185.00, 96.40, 250.00, 4343.95, 290.00],
+  "phones": ["8435550138", "8435550139", "8435550140", "8435550141"],
+  "emails": ["garnishment@kdplaw.example"],
+  "websites": ["ncalderlegalaid.example"],
+  "references": ["2025-CV-031874", "G-26-04471"],
+  "actions": [["claim of exemption", "file it"], ["mail a copy"]],
+  "consequences": [["lose your right"]],
+  "rights": [["protect", "garnishment"], ["right to a hearing"], ["free legal help"], ["no fee"]]
+}

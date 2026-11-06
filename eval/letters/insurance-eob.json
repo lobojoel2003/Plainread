@@ -1,0 +1,17 @@
+{
+  "id": "insurance-eob",
+  "description": "Explanation of Benefits (not a bill) with billed, allowed, paid and owed amounts and no deadlines",
+  "letter_type": "health_insurance",
+  "today": "2026-06-22",
+  "letter_date": "2026-06-18",
+  "sender": "Pinewood Valley",
+  "dates": [],
+  "amounts": [210.00, 134.00, 104.00, 30.00, 432.00, 254.15, 203.32, 50.83, 642.00, 388.15, 307.32, 80.83, 253.85, 4000.00, 1146.27, 2853.73],
+  "phones": ["8885550170", "8885550171", "8005550172"],
+  "emails": [],
+  "websites": ["pinewoodvalley.example/member"],
+  "references": ["PVH-302917748", "00841-B", "EOB26-1689204"],
+  "actions": [],
+  "consequences": [],
+  "rights": [["right to appeal"], ["language assistance", "free of charge"]]
+}

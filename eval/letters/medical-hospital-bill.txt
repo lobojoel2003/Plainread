@@ -1,0 +1,72 @@
+HARBORVIEW HEALTH PARTNERS
+Patient Financial Services
+PO Box 7781
+Seabright, Westmara 60455
+
+Questions? Call Customer Service: (312) 555-0160
+Monday - Friday, 8:00 a.m. - 6:00 p.m.
+billing@harborview.example  |  www.harborview.example/paybill
+
+                                 PATIENT STATEMENT
+
+Statement Date:          04/06/2026
+Account Number:          HHP-4471920
+Guarantor:               Rosalind M. Achterberg
+Patient:                 Rosalind M. Achterberg
+Patient Date of Birth:   09/22/1961
+Please Pay By:           05/01/2026
+AMOUNT DUE:              $1,287.46
+
+SUMMARY OF SERVICES
+Facility: Harborview Medical Center - Inpatient Admission
+Dates of Service: 02/11/2026 - 02/13/2026
+Attending Physician: Kenji Albrecht, MD
+
+Date         Description                                        Charges
+02/11/2026   Emergency department visit, level 4              $1,875.00
+02/11/2026   Room and board, medical/surgical (2 days)        $6,420.00
+02/12/2026   Laboratory services                              $1,104.00
+02/12/2026   CT scan, abdomen and pelvis with contrast        $2,310.00
+02/13/2026   Pharmacy                                           $612.35
+
+Total Charges                                                $12,321.35
+Insurance Payment - Tidewater Health Plan (03/20/2026)        $8,945.12
+Contractual Adjustment - Tidewater Health Plan                $2,088.77
+YOUR BALANCE AFTER INSURANCE                                  $1,287.46
+
+MESSAGE FROM HARBORVIEW: Your insurance has processed this claim. The balance shown is
+your responsibility under the terms of your health plan, including your deductible and
+coinsurance.
+
+Please pay the Amount Due by 05/01/2026. You may pay online at
+www.harborview.example/paybill, by calling (312) 555-0160, or by returning the payment
+coupon below with a check or money order payable to Harborview Health Partners.
+
+If you cannot pay the full balance, interest-free monthly payment plans are available
+for as little as $25.00 per month. Call us before the due date to set up a payment plan.
+
+FINANCIAL ASSISTANCE IS AVAILABLE. You may qualify for free or discounted care under the
+Harborview Financial Assistance Policy if your household income is at or below 400% of
+the federal poverty level, or if your medical bills are large compared to your income.
+For this statement to be considered, your completed Financial Assistance Application and
+proof of income must be received by November 30, 2026. Applications and a plain-language
+summary of the policy are available free of charge at any registration desk, by calling
+(312) 555-0161, or at www.harborview.example/assistance.
+
+If no payment, payment plan or financial assistance application is received, your
+account may be referred to an outside collection agency.
+
+ATENCION: si habla espanol, tiene a su disposicion servicios gratuitos de asistencia
+linguistica. Llame al (312) 555-0162.
+Harborview Health Partners complies with applicable civil rights laws and does not
+discriminate on the basis of race, color, national origin, age, disability, or sex.
+
+- - - - - - - - Please detach and return this portion with your payment - - - - - - - -
+
+Account Number: HHP-4471920            Statement Date: 04/06/2026
+Amount Due: $1,287.46                  Please Pay By: 05/01/2026
+Amount Enclosed: $______________
+
+Make check payable to:   Harborview Health Partners
+                         PO Box 7781
+                         Seabright, Westmara 60455

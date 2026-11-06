@@ -1,0 +1,23 @@
+{
+  "id": "benefits-no-year",
+  "description": "Child care assistance redetermination letter where most dates omit the year (June 3, Monday, June 8, June 30)",
+  "letter_type": "benefits",
+  "today": "2026-05-29",
+  "letter_date": "2026-05-26",
+  "sender": "Pinecrest County",
+  "dates": [
+    {"date": "2026-06-03", "kind": "respond_by"},
+    {"date": "2026-06-08", "kind": "appointment"},
+    {"date": "2026-06-30", "kind": "ends"},
+    {"date": "2026-06-15", "kind": "starts"},
+    {"date": "2026-06-25", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [3140.00, 22.00, 38.00],
+  "phones": ["5415550181", "5415550182", "5415550183"],
+  "emails": ["childcare@pinecrestdss.example"],
+  "websites": ["pinecrestdss.example/childcare"],
+  "references": ["CC-3091-7720"],
+  "actions": [["return", "redetermination application"], ["attend", "appointment"], ["copayment", "directly"], ["hearing", "30 days"]],
+  "consequences": [["will end", "provider"]],
+  "rights": [["fair hearing"], ["free interpreter"]]
+}

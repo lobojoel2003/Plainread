@@ -1,0 +1,20 @@
+{
+  "id": "court-small-claims",
+  "description": "Small claims summons with a hearing date, an answer deadline and a default judgment warning",
+  "letter_type": "court",
+  "today": "2026-03-12",
+  "letter_date": "2026-03-09",
+  "sender": "Lakemont County",
+  "dates": [
+    {"date": "2026-04-14", "kind": "hearing"},
+    {"date": "2026-04-03", "kind": "respond_by"}
+  ],
+  "amounts": [3475.00, 75.00, 48.50, 35.00],
+  "phones": ["3125550142", "3125550143", "3125550144"],
+  "emails": ["clerk@lakemontcourts.example", "ada@lakemontcourts.example"],
+  "websites": ["lakemontcourts.example/selfhelp"],
+  "references": ["SC-2026-004512"],
+  "actions": [["appear", "in person"], ["written answer", "no later than"], ["copy", "mailed", "plaintiff"], ["bring", "evidence"]],
+  "consequences": [["default judgment"], ["decide against"]],
+  "rights": [["interpreter", "no cost"], ["counterclaim", "may file"], ["waive", "afford"], ["accommodation"]]
+}

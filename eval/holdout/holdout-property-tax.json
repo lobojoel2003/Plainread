@@ -1,0 +1,21 @@
+{
+  "id": "holdout-property-tax",
+  "description": "County secured property tax bill with two installments, late-payment penalties, parcel number and assessment appeal deadline",
+  "letter_type": "tax",
+  "today": "2026-10-07",
+  "letter_date": "2026-10-02",
+  "sender": "Ostrevan County",
+  "dates": [
+    {"date": "2026-12-10", "kind": "payment_due"},
+    {"date": "2027-04-12", "kind": "payment_due"},
+    {"date": "2026-11-30", "kind": "respond_by"}
+  ],
+  "amounts": [121400.00, 186600.00, 7000.00, 301000.00, 3010.00, 418.22, 112.52, 174.00, 8.00, 3722.74, 1861.37, 2047.51, 2067.51, 20.00],
+  "phones": ["5595550118", "5595550119"],
+  "emails": ["taxcollector@ostrevancounty.example"],
+  "websites": ["ostrevancounty-tax.example", "ostrevancounty.example/appeals"],
+  "references": ["2026-0118843", "213-0471-019-00"],
+  "actions": [["check", "stub"]],
+  "consequences": [["first", "penalty"], ["second", "cost"], ["defaulted", "redemption"]],
+  "rights": [["disagree", "assessment"]]
+}

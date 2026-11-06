@@ -1,0 +1,20 @@
+{
+  "id": "tax-balance-due",
+  "description": "State revenue balance-due notice with tax, penalty and interest, a pay-by date and a protest deadline",
+  "letter_type": "tax",
+  "today": "2026-03-27",
+  "letter_date": "2026-03-23",
+  "sender": "Department of Revenue",
+  "dates": [
+    {"date": "2026-04-22", "kind": "payment_due"},
+    {"date": "2026-05-22", "kind": "respond_by"}
+  ],
+  "amounts": [2105.00, 1472.00, 3412.00, 1940.00, 194.00, 62.17, 2196.17, 50.00],
+  "phones": ["9195550110", "9195550111", "9195550112"],
+  "emails": [],
+  "websites": ["ncrevenue.example", "ncrevenue.example/pay", "ncrevenue.example/plan"],
+  "references": ["L-2026-0388147", "NCT-0472-9915"],
+  "actions": [["pay", "total amount due"], ["protest", "60 days"]],
+  "consequences": [["lien"]],
+  "rights": [["right", "written protest"], ["installment"], ["taxpayer rights advocate"]]
+}

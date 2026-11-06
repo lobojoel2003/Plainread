@@ -1,0 +1,17 @@
+{
+  "id": "holdout-no-deadline-info",
+  "description": "Purely informational annual insurer privacy notice: no letter date, no deadlines, no amounts, no required actions",
+  "letter_type": "insurance",
+  "today": "2026-06-15",
+  "letter_date": null,
+  "sender": "Thistlewood Mutual",
+  "dates": [],
+  "amounts": [],
+  "phones": ["8555550102", "8555550103"],
+  "emails": ["privacy@thistlewood.example"],
+  "websites": ["thistlewood.example/privacy"],
+  "references": ["TMH-3390-1182-77"],
+  "actions": [],
+  "consequences": [],
+  "rights": [["right", "correct"], ["send", "statement"], ["interpreter"]]
+}

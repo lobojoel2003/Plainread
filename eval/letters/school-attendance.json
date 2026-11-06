@@ -1,0 +1,20 @@
+{
+  "id": "school-attendance",
+  "description": "School truancy notice requiring a parent attendance meeting, with documents to bring and a free interpreter",
+  "letter_type": "school",
+  "today": "2026-01-15",
+  "letter_date": "2026-01-12",
+  "sender": "Riverbend",
+  "dates": [
+    {"date": "2026-01-21", "kind": "appointment"},
+    {"date": "2026-01-16", "kind": "respond_by"}
+  ],
+  "amounts": [250.00],
+  "phones": ["2175550102", "2175550103"],
+  "emails": ["attendance@maplehollow.example"],
+  "websites": [],
+  "references": ["2048813"],
+  "actions": [["required to attend", "meeting"], ["bring", "following"], ["call", "reschedule"]],
+  "consequences": [["refer", "attendance review board"], ["fined"]],
+  "rights": [["free interpretation"], ["support person"]]
+}

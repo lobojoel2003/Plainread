@@ -1,0 +1,20 @@
+{
+  "id": "holdout-workers-comp",
+  "description": "Workers' compensation claim acceptance (day-month-year dates) with independent medical exam appointment, 5-business-day confirmation, mileage reimbursement",
+  "letter_type": "employment",
+  "today": "2026-07-10",
+  "letter_date": "2026-07-07",
+  "sender": "Gravenstone",
+  "dates": [
+    {"date": "2026-07-22", "kind": "appointment"},
+    {"date": "2026-07-14", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [612.45, 918.68, 1224.90, 0.70],
+  "phones": ["3175550164", "3175550165", "8005550166", "3175550167"],
+  "emails": ["m.osei-lindqvist@gravenstonemutual.example"],
+  "websites": ["gravenstonemutual.example", "gravenstonemutual.example/forms"],
+  "references": ["WC-26-118407-GR"],
+  "actions": [["attend", "examination"], ["bring", "photo"], ["confirm", "attendance"], ["complete", "mileage"]],
+  "consequences": [["suspension", "benefits"]],
+  "rights": [["entitled", "mileage"], ["interpreter"], ["right", "hearing"], ["free", "help"]]
+}

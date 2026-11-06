@@ -1,0 +1,55 @@
+Quillon Valley Medical Center
+Patient Financial Services
+2200 Orchard Bend Road, Quillon Falls, LR 60214
+Customer Service: (309) 555-0137    Mon-Fri 8:00 AM - 5:00 PM
+Online: qvmc-billing.example    Email: pfs@qvmc-billing.example
+
+                              PATIENT STATEMENT
+
+  Statement Date:            05/14/2026
+  Guarantor Account No.:     30098812
+  Patient Name:              DESHAWN L. MERRIWETHER
+  Patient Date of Birth:     09/03/1991
+  Encounter No.:             ED-260422-0457
+  Service Location:          Emergency Department
+  Date of Service:           04/22/2026
+  Primary Insurance:         Ferncastle Health Plan
+
+  +----------------------------------------------------------------+
+  |  ACCOUNT BALANCE .................................. $905.00    |
+  |  MINIMUM PAYMENT DUE ............................... $75.00    |
+  |  PLEASE PAY BY .................................. 06/08/2026   |
+  +----------------------------------------------------------------+
+
+ITEMIZED CHARGES AND ACTIVITY
+--------------------------------------------------------------------------
+DATE        CODE   DESCRIPTION                                    AMOUNT
+--------------------------------------------------------------------------
+04/22/2026  0450   EMERGENCY ROOM - LEVEL 4                    $1,842.00
+04/22/2026  0352   CT SCAN HEAD/BRAIN W/O CONTRAST             $2,310.00
+04/22/2026  0301   LAB - COMPREHENSIVE METABOLIC PANEL           $186.00
+04/22/2026  0250   PHARMACY - IV MEDICATIONS                      $94.50
+                   TOTAL CHARGES                               $4,432.50
+05/02/2026         INSURANCE PAYMENT - FERNCASTLE HEALTH     -$2,915.20
+05/02/2026         CONTRACTUAL ADJUSTMENT - FERNCASTLE         -$612.30
+--------------------------------------------------------------------------
+                   PATIENT BALANCE                               $905.00
+--------------------------------------------------------------------------
+Payments received after 05/12/2026 may not appear on this statement.
+
+MESSAGES
+Your insurance has processed this visit, and the remaining balance is your responsibility. Please pay the full balance, or at least the minimum payment of $75.00, by 06/08/2026. If you pay at least the minimum amount every month, your account will be placed on an interest-free payment plan; no separate agreement is needed for balances under $1,000.00. If your insurance information has changed, call Customer Service so we can bill your new plan.
+
+If no payment or payment arrangement is received by 06/08/2026, your account may be referred to Corbett-Lyle Recovery Associates, an outside collection agency.
+
+FINANCIAL ASSISTANCE IS AVAILABLE
+Quillon Valley Medical Center provides free or discounted care to eligible patients based on household income and family size. You may qualify for financial assistance even if you have insurance. To apply, call a Financial Counselor at (309) 555-0138 or download an application at qvmc-billing.example/assistance. Language assistance services, free of charge, are available to you: call (309) 555-0139.
+
+- - - - - - - - - - DETACH AND RETURN THIS PORTION WITH YOUR PAYMENT - - - - - - - - - -
+QUILLON VALLEY MEDICAL CENTER            Account No.: 30098812
+PO Box 7720                               Statement Date: 05/14/2026
+Quillon Falls, LR 60214                  Pay By: 06/08/2026
+                                          Amount Due: $905.00
+                                          Minimum Due: $75.00
+                                          Amount Enclosed: $______________
+Make checks payable to Quillon Valley Medical Center. Please write your account number on your check.

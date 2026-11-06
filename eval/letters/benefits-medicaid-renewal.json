@@ -1,0 +1,21 @@
+{
+  "id": "benefits-medicaid-renewal",
+  "description": "State health coverage renewal: return the form by a date or coverage ends; late-return window",
+  "letter_type": "benefits",
+  "today": "2026-03-20",
+  "letter_date": "2026-03-16",
+  "sender": "Department of Human Services",
+  "dates": [
+    {"date": "2026-04-15", "kind": "respond_by"},
+    {"date": "2026-04-30", "kind": "ends"},
+    {"date": "2026-07-29", "kind": "respond_by"}
+  ],
+  "amounts": [2976.00, 4412.00],
+  "phones": ["6085550189", "8775550188", "8775550187"],
+  "emails": [],
+  "websites": ["westmaradhs.example/renew"],
+  "references": ["0097-55813-WC"],
+  "actions": [["return", "renewal form"], ["send", "proof"]],
+  "consequences": [["coverage", "will end"]],
+  "rights": [["fair hearing"], ["interpreter"], ["other formats"]]
+}

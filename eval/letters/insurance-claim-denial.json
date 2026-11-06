@@ -1,0 +1,19 @@
+{
+  "id": "insurance-claim-denial",
+  "description": "Health plan claim denial with a 180-day appeal window and external review rights",
+  "letter_type": "health_insurance",
+  "today": "2026-05-15",
+  "letter_date": "2026-05-12",
+  "sender": "Silverbirch",
+  "dates": [
+    {"date": "2026-11-08", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [4860.00],
+  "phones": ["8005550163", "8005550164", "6145550165", "6145550166"],
+  "emails": ["appeals@silverbirchhealth.example"],
+  "websites": ["westmarahealthhelp.example"],
+  "references": ["SBH884120937", "WG-55120", "2026-0417-883152"],
+  "actions": [["appeal", "180 days"], ["contact member services", "receive a bill"]],
+  "consequences": [["responsible", "full amount"]],
+  "rights": [["right", "internal appeal"], ["free of charge", "copies"], ["expedited appeal", "doctor"], ["external review", "right"], ["help", "no cost"], ["language assistance", "free of charge"]]
+}

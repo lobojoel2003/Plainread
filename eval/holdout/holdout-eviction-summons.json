@@ -1,0 +1,20 @@
+{
+  "id": "holdout-eviction-summons",
+  "description": "Unlawful detainer (eviction) summons: printed last day to respond after a 5-court-day window, trial setting, fee waiver, free legal help",
+  "letter_type": "court",
+  "today": "2026-03-12",
+  "letter_date": "2026-03-09",
+  "sender": "Westmarch",
+  "dates": [
+    {"date": "2026-03-16", "kind": "respond_by"},
+    {"date": "2026-04-02", "kind": "hearing"}
+  ],
+  "amounts": [2150.00, 47.50, 240.00],
+  "phones": ["5625550113", "5625550115", "5625550114", "5625550116"],
+  "emails": ["filings@corwinabate.example"],
+  "websites": ["tenantdefense.example", "westmarchcourts.example/selfhelp"],
+  "references": ["UD-26-0031875"],
+  "actions": [["file", "answer"], ["appear", "person"], ["bring", "receipts"]],
+  "consequences": [["default", "judgment"], ["sheriff", "remove"]],
+  "rights": [["fee", "waiver"], ["free", "legal"], ["interpreter"]]
+}

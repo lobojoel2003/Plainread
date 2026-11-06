@@ -1,0 +1,20 @@
+{
+  "id": "utility-shutoff",
+  "description": "Electric utility final disconnection notice with a pay-by date, disconnection date and medical certificate protection",
+  "letter_type": "utility",
+  "today": "2026-10-08",
+  "letter_date": "2026-10-05",
+  "sender": "Granite Valley",
+  "dates": [
+    {"date": "2026-10-19", "kind": "payment_due"},
+    {"date": "2026-10-20", "kind": "ends"}
+  ],
+  "amounts": [212.54, 187.08, 13.25, 412.87, 96.40, 509.27, 50.00, 75.00, 200.00],
+  "phones": ["8005550120", "8005550121", "5095550122", "5095550123", "8885550124"],
+  "emails": [],
+  "websites": ["granitevalleyelectric.example"],
+  "references": ["40-118372-06"],
+  "actions": [["pay", "past-due amount"]],
+  "consequences": [["reconnection fee"], ["unless", "disconnected"]],
+  "rights": [["delay disconnection"], ["deferred payment arrangement"], ["free help"], ["regulatory commission"]]
+}

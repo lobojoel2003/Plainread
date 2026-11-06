@@ -1,0 +1,20 @@
+{
+  "id": "holdout-student-loan",
+  "description": "Past-due student loan billing statement (ISO dates) with due date, credit-reporting date, default warning, income-driven plan and AutoPay offer",
+  "letter_type": "debt",
+  "today": "2026-04-21",
+  "letter_date": "2026-04-16",
+  "sender": "Meridawn",
+  "dates": [
+    {"date": "2026-05-08", "kind": "payment_due"},
+    {"date": "2026-06-06", "kind": "other"}
+  ],
+  "amounts": [159.22, 7.96, 326.40, 18642.07, 73.18, 25.00],
+  "phones": ["8885550193", "8885550194"],
+  "emails": ["help@meridawn-loans.example"],
+  "websites": ["meridawn-loans.example", "meridawn-loans.example/idr", "meridawn-loans.example/autopay"],
+  "references": ["7720-5531-0846"],
+  "actions": [["pay", "total"], ["apply", "online"], ["sign", "autopay"]],
+  "consequences": [["consumer", "reporting"], ["late", "fee"], ["default"]],
+  "rights": [["qualify", "income-driven"], ["deferment", "forbearance"]]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "immigration-biometrics",
+  "description": "Immigration biometrics appointment notice with what to bring, a reschedule deadline and distractor receipt/priority dates",
+  "letter_type": "immigration",
+  "today": "2026-05-22",
+  "letter_date": "2026-05-19",
+  "sender": "Residency and Naturalization",
+  "dates": [
+    {"date": "2026-06-09", "kind": "appointment"},
+    {"date": "2026-06-02", "kind": "respond_by"}
+  ],
+  "amounts": [1440.00],
+  "phones": ["8005550115", "8005550116"],
+  "emails": [],
+  "websites": ["forn.example/reschedule", "forn.example/status"],
+  "references": ["LKM2690451873", "F208447391"],
+  "actions": [["appear", "biometric collection center"], ["bring", "photo identification"], ["cannot attend", "new appointment"]],
+  "consequences": [["abandoned"], ["not be processed"]],
+  "rights": [["accommodation"], ["attorney", "accompany"]]
+}

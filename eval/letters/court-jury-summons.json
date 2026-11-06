@@ -1,0 +1,20 @@
+{
+  "id": "court-jury-summons",
+  "description": "Jury duty summons with a reporting date and an online response deadline",
+  "letter_type": "court",
+  "today": "2026-07-09",
+  "letter_date": "2026-07-06",
+  "sender": "Calder County",
+  "dates": [
+    {"date": "2026-08-10", "kind": "appointment"},
+    {"date": "2026-07-20", "kind": "respond_by"}
+  ],
+  "amounts": [15.00, 40.00, 0.30, 500.00],
+  "phones": ["8435550150", "8435550151", "8435550152", "8435550153", "8435550154"],
+  "emails": ["jury@caldercourts.example"],
+  "websites": ["caldercourts.example/jury"],
+  "references": ["J-26-118374"],
+  "actions": [["summoned", "jury service"], ["required", "questionnaire"], ["call", "still report"], ["bring", "photo id"], ["remain", "courthouse"]],
+  "consequences": [["fined"]],
+  "rights": [["one-time postponement"], ["permanently excused"], ["prohibits", "employer"], ["accommodation"]]
+}

@@ -1,0 +1,50 @@
+Meridawn Education Loan Servicing
+P.O. Box 30117, Ashcarrow, LR 60690
+Customer Care 1-888-555-0193  |  TTY 1-888-555-0194  |  meridawn-loans.example
+
+PRIYANKA S. HOLLOWAY-REYES
+77 BRINDLE CREEK DR APT 12
+ASHCARROW LR 60695
+
+MONTHLY BILLING STATEMENT
+=====================================================================
+Statement Date ................................. 2026-04-16
+Account Number ................................. 7720-5531-0846
+Payment Due Date ............................... 2026-05-08
+---------------------------------------------------------------------
+Current Amount Due ................................. $159.22
+Past Due Amount .................................... $159.22
+Late Fees ............................................ $7.96
+TOTAL AMOUNT DUE ................................... $326.40
+=====================================================================
+
+ACCOUNT ACTIVITY AND LOAN DETAIL
+Last Payment Received                    $159.22 on 2026-02-06
+Missed Payment Due Date                  2026-03-08
+Days Delinquent (as of statement date)   39
+Outstanding Principal                    $18,642.07
+Accrued Unpaid Interest                  $73.18
+Interest Rate                            5.05% (fixed)
+Repayment Plan                           Standard 10-Year
+
+YOUR ACCOUNT IS PAST DUE
+We have not received the payment that was due on 2026-03-08. Please pay the Total Amount Due of $326.40 by 2026-05-08 to bring your account current. If you have already sent your payment, please disregard this notice.
+
+WHAT HAPPENS IF YOU DON'T PAY
+ * If no payment is received, your account will become 90 days delinquent on 2026-06-06, and we will report the delinquency to the national consumer reporting agencies, which may harm your credit.
+ * A late fee of up to 6% of the unpaid amount may be charged on any payment not received within 15 days after its due date.
+ * If you do not make a payment for 270 days, your loan may go into default; the entire unpaid balance may then become due immediately, and your wages or tax refunds may be taken to repay it.
+
+HAVING TROUBLE PAYING? WE CAN HELP.
+You may qualify for a lower monthly payment under an income-driven repayment (IDR) plan, which bases your payment on your income and family size; some borrowers' payments may be as low as $25.00 a month. Apply online at meridawn-loans.example/idr and have your most recent tax return or pay stubs ready. You may also be eligible to temporarily postpone your payments through deferment or forbearance.
+
+SAVE WITH AUTOPAY
+Sign up for AutoPay at meridawn-loans.example/autopay and your payment will be withdrawn from your bank account automatically on each due date. Borrowers enrolled in AutoPay receive a 0.25% interest rate reduction while enrolled.
+
+Questions? Email help@meridawn-loans.example or call 1-888-555-0193, Monday through Friday, 8 a.m. to 9 p.m.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+RETURN THIS COUPON WITH YOUR PAYMENT
+Account Number: 7720-5531-0846          Due Date: 2026-05-08
+Total Amount Due: $326.40               Amount Enclosed: $______________
+Make your check or money order payable to Meridawn Education Loan Servicing. Do not send cash.

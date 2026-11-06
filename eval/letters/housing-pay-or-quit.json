@@ -1,0 +1,19 @@
+{
+  "id": "housing-pay-or-quit",
+  "description": "Landlord 14-day notice to pay rent or quit, deadline counted from receipt of the notice",
+  "letter_type": "housing",
+  "today": "2026-05-07",
+  "letter_date": "2026-05-04",
+  "sender": "Bristlecone",
+  "dates": [
+    {"date": "2026-05-18", "kind": "payment_due", "relative": true}
+  ],
+  "amounts": [1450.00, 300.00, 2600.00],
+  "phones": ["5085550131", "5085550132", "5085550177", "8005550129"],
+  "emails": [],
+  "websites": ["eastmoorlegalhelp.example"],
+  "references": ["CHA-3B-004817"],
+  "actions": [["pay", "avoid termination"], ["applied", "tell"]],
+  "consequences": [["eviction"]],
+  "rights": [["only a judge", "defend"], ["free legal"], ["rental assistance", "qualify"]]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "holdout-dental-denial",
+  "description": "Dental plan pre-treatment estimate denial (frequency limitation) with appeal within 60 days of the date of the notice",
+  "letter_type": "health_insurance",
+  "today": "2026-06-08",
+  "letter_date": "2026-06-03",
+  "sender": "Brightcoast Dental",
+  "dates": [
+    {"date": "2026-08-02", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [1385.00, 285.00, 1670.00, 1500.00, 1140.00],
+  "phones": ["8665550158", "8665550159", "4145550160"],
+  "emails": ["appeals@brightcoastdental.example"],
+  "websites": ["brightcoastdental.example/appeals"],
+  "references": ["BCD-448820193", "G-07715", "PTE-2026-0603-77812"],
+  "actions": [["appeal", "writing"], ["include", "copy"]],
+  "consequences": [["final", "review"]],
+  "rights": [["right", "appeal"], ["dentist", "behalf"], ["free", "copies"], ["language", "assistance"]]
+}

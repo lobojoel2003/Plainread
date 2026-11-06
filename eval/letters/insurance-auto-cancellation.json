@@ -1,0 +1,20 @@
+{
+  "id": "insurance-auto-cancellation",
+  "description": "Auto insurance cancellation for nonpayment with a cancellation effective date and a pay-by date to keep coverage",
+  "letter_type": "insurance",
+  "today": "2026-04-16",
+  "letter_date": "2026-04-13",
+  "sender": "Copperline",
+  "dates": [
+    {"date": "2026-05-03", "kind": "ends"},
+    {"date": "2026-05-02", "kind": "payment_due"}
+  ],
+  "amounts": [186.42, 8.00, 194.42, 559.26, 1118.52],
+  "phones": ["8665550153", "8665550154", "6305550155", "6085550156"],
+  "emails": [],
+  "websites": ["copperlinemutual.example/pay", "westmarainsurance.example"],
+  "references": ["PA-7702-114938"],
+  "actions": [["pay", "minimum amount due"]],
+  "consequences": [["no insurance coverage"], ["suspension", "registration"], ["lapse"]],
+  "rights": [["right", "review"]]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "employment-unemployment-overpayment",
+  "description": "Unemployment overpayment determination: repay, request a waiver or appeal within 30 days of the mailing date",
+  "letter_type": "employment",
+  "today": "2026-08-18",
+  "letter_date": "2026-08-14",
+  "sender": "Workforce Security",
+  "dates": [
+    {"date": "2026-09-13", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [364.00, 2184.00, 1820.00, 50.00],
+  "phones": ["6085550190", "6085550191", "6085550192", "6085550193"],
+  "emails": [],
+  "websites": ["westmarajobs.example/ui", "westmarajobs.example/repay", "westmarajobs.example/appeal"],
+  "references": ["UI-4402871", "OP-26-0193377"],
+  "actions": [["repay", "balance due"], ["waiver", "return"], ["appeal", "filed", "30 days"]],
+  "consequences": [["intercept"]],
+  "rights": [["waive", "forgive"], ["right to appeal"], ["represented", "attorney"], ["free legal"], ["interpreter"]]
+}

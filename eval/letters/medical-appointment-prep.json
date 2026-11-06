@@ -1,0 +1,19 @@
+{
+  "id": "medical-appointment-prep",
+  "description": "Colonoscopy appointment letter with step-by-step prep instructions, driver requirement and 48-hour cancellation rule",
+  "letter_type": "medical",
+  "today": "2026-03-05",
+  "letter_date": "2026-03-02",
+  "sender": "Larchmont",
+  "dates": [
+    {"date": "2026-03-19", "kind": "appointment"}
+  ],
+  "amounts": [150.00, 385.00],
+  "phones": ["6305550145", "6305550146", "6305550147"],
+  "emails": [],
+  "websites": ["ironwoodregional.example/gi"],
+  "references": ["00731846"],
+  "actions": [["arrive", "30 minutes"], ["bring", "insurance card"], ["responsible adult", "drive you home"], ["pick it up"], ["stop taking", "iron"], ["blood thinner", "call"], ["do not stop these medicines"], ["stop eating", "nuts"], ["solid food", "clear liquids"], ["red or purple"], ["first half"], ["second half"], ["do not eat or drink"], ["cancel", "48 hours"]],
+  "consequences": [["procedure will be cancelled"], ["late cancellation fee"]],
+  "rights": [["interpreters", "no cost"]]
+}

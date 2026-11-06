@@ -1,0 +1,22 @@
+{
+  "id": "benefits-pension-change",
+  "description": "Retirement benefit recalculation: new monthly amount starts on a date; reconsideration within 60 days (10 days to keep old amount)",
+  "letter_type": "benefits",
+  "today": "2026-07-20",
+  "letter_date": "2026-07-15",
+  "sender": "Public Employees Retirement",
+  "dates": [
+    {"date": "2026-09-01", "kind": "starts"},
+    {"date": "2026-07-31", "kind": "respond_by"},
+    {"date": "2026-09-13", "kind": "respond_by", "relative": true},
+    {"date": "2026-07-25", "kind": "respond_by", "relative": true}
+  ],
+  "amounts": [1945.10, 1797.11, 212.00, 96.00, 84.00, 1637.10, 1501.11],
+  "phones": ["6085550194", "8885550195", "6085550196"],
+  "emails": ["benefits@wpers.example"],
+  "websites": ["wpers.example", "wpers.example/appeals"],
+  "references": ["R-0038817"],
+  "actions": [["return", "withholding"], ["request", "writing", "60 days"]],
+  "consequences": [],
+  "rights": [["right", "reconsider"], ["10 days", "continue to pay"]]
+}

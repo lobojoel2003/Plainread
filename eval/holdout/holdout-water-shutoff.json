@@ -1,0 +1,20 @@
+{
+  "id": "holdout-water-shutoff",
+  "description": "Informal door-hanger water shut-off warning using day-of-month dates ('the 14th', 'the 15th') with payment plan, reconnect fee and hardship help",
+  "letter_type": "utility",
+  "today": "2026-09-10",
+  "letter_date": "2026-09-08",
+  "sender": "Pellridge",
+  "dates": [
+    {"date": "2026-09-14", "kind": "payment_due"},
+    {"date": "2026-09-15", "kind": "ends"}
+  ],
+  "amounts": [186.42, 40.00, 60.00, 50.00, 125.00, 300.00],
+  "phones": ["5415550129", "5415550130"],
+  "emails": ["utilitybilling@cityofpellridge.example"],
+  "websites": ["cityofpellridge.example/water"],
+  "references": ["0049-22817-03"],
+  "actions": [["pay", "full"], ["payment", "plan"]],
+  "consequences": [["turned", "off"], ["reconnect", "fee"]],
+  "rights": [["medical", "doctor"], ["tenants", "right"], ["community", "fund"]]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "debt-validation",
+  "description": "Debt collector validation notice with itemization, original creditor and a dispute-by date",
+  "letter_type": "debt",
+  "today": "2026-01-23",
+  "letter_date": "2026-01-20",
+  "sender": "Summit Ridge",
+  "dates": [
+    {"date": "2026-02-24", "kind": "respond_by"}
+  ],
+  "amounts": [1705.10, 141.12, 35.00, 25.00, 1856.22],
+  "phones": ["8885550135", "6085550136"],
+  "emails": ["disputes@summitridgerecovery.example"],
+  "websites": ["summitridgerecovery.example", "summitridgerecovery.example/rights", "westmaraconsumercredit.example"],
+  "references": ["SRR-7719-40382", "LFC-44829035"],
+  "actions": [["dispute", "all or part"]],
+  "consequences": [["assume", "correct"]],
+  "rights": [["stop collection", "dispute"], ["original creditor", "name and address"]]
+}

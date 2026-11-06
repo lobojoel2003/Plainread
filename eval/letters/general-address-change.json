@@ -1,0 +1,17 @@
+{
+  "id": "general-address-change",
+  "description": "Credit union confirmation of an address change: informational only, no actions and no future dates",
+  "letter_type": "general",
+  "today": "2026-10-05",
+  "letter_date": "2026-09-30",
+  "sender": "Harborline",
+  "dates": [],
+  "amounts": [250000.00],
+  "phones": ["8435550108"],
+  "emails": [],
+  "websites": [],
+  "references": ["0048812-7"],
+  "actions": [],
+  "consequences": [],
+  "rights": []
+}
