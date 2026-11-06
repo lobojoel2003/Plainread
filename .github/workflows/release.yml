@@ -1,6 +1,10 @@
 name: Release
 
-# Push a tag like v1.2.3 (see CONTRIBUTING.md -> Releasing) to publish:
+# Two ways to publish a release (see CONTRIBUTING.md -> Versioning and releases):
+#   1. push a tag like v1.2.3, or
+#   2. run this workflow from the Actions tab ("Run workflow") with the tag
+#      name; if the tag does not exist yet it is created on the chosen branch.
+# Either way it publishes:
 #   * Python wheel + sdist
 #   * standalone apps for Linux, Windows and macOS
 #   * a Docker image on GitHub Container Registry
@@ -14,7 +18,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Existing tag to (re)release, e.g. v1.0.0"
+        description: "Version tag to release, e.g. v1.0.0 (created from the selected branch if it does not exist)"
         required: true
 
 permissions:
@@ -32,16 +36,36 @@ jobs:
   verify:
     name: Verify tag and version
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # only used to create the tag for a manual release
     outputs:
       version: ${{ steps.meta.outputs.version }}
       prerelease: ${{ steps.meta.outputs.prerelease }}
     steps:
       - uses: actions/checkout@v5
         with:
-          ref: ${{ env.TAG }}
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Create the tag (manual release)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          ACTOR: ${{ github.actor }}
+          ACTOR_ID: ${{ github.actor_id }}
+        run: |
+          if git rev-parse -q --verify "refs/tags/$TAG" > /dev/null; then
+            echo "Tag $TAG already exists; releasing it again."
+          else
+            python scripts/release_notes.py --check "$TAG"
+            git config user.name "$ACTOR"
+            git config user.email "${ACTOR_ID}+${ACTOR}@users.noreply.github.com"
+            git tag -a "$TAG" -m "Plainread ${TAG#v}"
+            git push origin "refs/tags/$TAG"
+            echo "Created tag $TAG at $(git rev-parse --short HEAD)"
+          fi
+      - name: Check out the tag
+        run: git checkout --quiet "refs/tags/$TAG"
       - name: Tag must match package version and CHANGELOG
         run: python scripts/release_notes.py --check "$TAG"
       - id: meta

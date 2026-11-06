@@ -83,6 +83,8 @@ To release:
    git tag -a v1.0.1 -m "Plainread 1.0.1"
    git push origin main --follow-tags
    ```
+   Or, instead of pushing a tag, open **Actions → Release → Run workflow** on `main`
+   and enter the tag (for example `v1.0.1`); the workflow creates the tag for you.
 4. The **Release** workflow checks that the tag matches the version and the
    changelog, runs the full CI, builds the Python package, the Windows/macOS/Linux
    apps and the Docker image, and publishes a GitHub Release with notes, SHA-256
