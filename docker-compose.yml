@@ -1,0 +1,28 @@
+# Plainread + a local AI model, all on your own machine.
+#
+#   docker compose up -d
+#   docker compose exec ollama ollama pull gemma3:4b    # one-time model download (~3 GB)
+#   open http://127.0.0.1:8765
+#
+# The port is bound to 127.0.0.1 so only this computer can reach Plainread.
+services:
+  plainread:
+    image: ghcr.io/lobojoel2003/plainread:latest
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      PLAINREAD_OLLAMA_URL: http://ollama:11434
+      PLAINREAD_MODEL: gemma3:4b
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama: {}

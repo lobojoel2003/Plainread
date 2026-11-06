@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an idea, a new language, or a kind of letter Plainread should handle better
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Who would this help, and how?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true

@@ -1,0 +1,272 @@
+name: Release
+
+# Push a tag like v1.2.3 (see CONTRIBUTING.md -> Releasing) to publish:
+#   * Python wheel + sdist
+#   * standalone apps for Linux, Windows and macOS
+#   * a Docker image on GitHub Container Registry
+#   * a GitHub Release with notes from CHANGELOG.md, SHA-256 checksums and
+#     signed build provenance for every file.
+# The build number baked into every artifact is this workflow's run number.
+
+on:
+  push:
+    tags: ["v*.*.*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing tag to (re)release, e.g. v1.0.0"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.event.inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+env:
+  TAG: ${{ github.event.inputs.tag || github.ref_name }}
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  verify:
+    name: Verify tag and version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
+      prerelease: ${{ steps.meta.outputs.prerelease }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Tag must match package version and CHANGELOG
+        run: python scripts/release_notes.py --check "$TAG"
+      - id: meta
+        run: |
+          version="${TAG#v}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          if [[ "$version" == *-* ]]; then echo "prerelease=true" >> "$GITHUB_OUTPUT"; else echo "prerelease=false" >> "$GITHUB_OUTPUT"; fi
+
+  ci:
+    name: CI
+    needs: verify
+    uses: ./.github/workflows/ci.yml
+
+  python:
+    name: Python package
+    needs: [verify, ci]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install build twine
+      - run: python scripts/stamp_build.py --build-number "${{ github.run_number }}" --commit "$(git rev-parse HEAD)"
+      - run: python -m build
+      - run: twine check --strict dist/*
+      - uses: actions/upload-artifact@v5
+        with:
+          name: release-python
+          path: dist/*
+
+  apps:
+    name: App (${{ matrix.name }})
+    needs: [verify, ci]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            name: linux-x86_64
+          - os: windows-latest
+            name: windows-x86_64
+          - os: macos-latest
+            name: macos-arm64
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python scripts/stamp_build.py --build-number "${{ github.run_number }}" --commit "$(git rev-parse HEAD)"
+      - run: pip install ".[bundle]"
+      - name: Build standalone app
+        working-directory: packaging
+        run: pyinstaller plainread.spec --noconfirm --clean --distpath ../dist-app --workpath ../build-app
+      - name: Smoke test
+        run: |
+          exe=dist-app/plainread
+          [[ "$RUNNER_OS" == "Windows" ]] && exe=dist-app/plainread.exe
+          "$exe" --version
+          "$exe" --version | grep -q "build ${{ github.run_number }}"
+          printf 'Date: March 2, 2026\n\nYou must pay $40.00 by March 20, 2026.\n' > letter.txt
+          "$exe" explain letter.txt --json --today 2026-03-05 | grep -q payment_due
+      - name: Package
+        run: |
+          version="${{ needs.verify.outputs.version }}"
+          name="plainread-${version}-${{ matrix.name }}"
+          mkdir -p out "$name"
+          cp LICENSE "$name/"
+          cp packaging/QUICKSTART.txt "$name/README.txt"
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+            cp dist-app/plainread.exe "$name/"
+            7z a "out/${name}.zip" "$name" > /dev/null
+          elif [[ "$RUNNER_OS" == "macOS" ]]; then
+            cp dist-app/plainread "$name/"
+            ditto -c -k --keepParent "$name" "out/${name}.zip"
+          else
+            cp dist-app/plainread "$name/"
+            tar -czf "out/${name}.tar.gz" "$name"
+          fi
+          ls -la out
+      - uses: actions/upload-artifact@v5
+        with:
+          name: release-app-${{ matrix.name }}
+          path: out/*
+
+  docker:
+    name: Docker image
+    needs: [verify, ci]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
+      - id: image
+        run: echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ steps.image.outputs.name }}
+          tags: |
+            type=semver,pattern={{version}},value=${{ env.TAG }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ env.TAG }}
+            type=semver,pattern={{major}},value=${{ env.TAG }}
+            type=raw,value=latest,enable=${{ needs.verify.outputs.prerelease == 'false' }}
+            type=raw,value=build-${{ github.run_number }}
+          labels: |
+            org.opencontainers.image.title=Plainread
+            org.opencontainers.image.version=${{ needs.verify.outputs.version }}
+            io.plainread.build-number=${{ github.run_number }}
+      - id: push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            BUILD_NUMBER=${{ github.run_number }}
+            COMMIT=${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - uses: actions/attest-build-provenance@v3
+        with:
+          subject-name: ${{ steps.image.outputs.name }}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
+
+  publish:
+    name: Publish GitHub Release
+    needs: [verify, python, apps, docker]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: release-*
+          path: assets
+          merge-multiple: true
+      - name: Checksums
+        working-directory: assets
+        run: sha256sum * | tee SHA256SUMS.txt
+      - uses: actions/attest-build-provenance@v3
+        with:
+          subject-path: assets/*
+      - name: Release notes
+        run: |
+          version="${{ needs.verify.outputs.version }}"
+          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          {
+            python scripts/release_notes.py "$version"
+            echo
+            echo "## Download"
+            echo
+            echo "| You use | Download |"
+            echo "|---|---|"
+            echo "| Windows | \`plainread-${version}-windows-x86_64.zip\` |"
+            echo "| Mac (Apple silicon) | \`plainread-${version}-macos-arm64.zip\` |"
+            echo "| Linux | \`plainread-${version}-linux-x86_64.tar.gz\` |"
+            echo "| Python (any computer) | \`pip install plainread-${version}-py3-none-any.whl\` |"
+            echo "| Docker | \`docker run -p 127.0.0.1:8765:8765 ${image}:${version}\` |"
+            echo
+            echo "To read photos, also install the free [Tesseract OCR](https://tesseract-ocr.github.io/tessdoc/Installation.html) (the Docker image already has it)."
+            echo
+            echo "## Build"
+            echo
+            echo "- Version: **${version}**"
+            echo "- Build number: **${{ github.run_number }}**"
+            echo "- Commit: \`$(git rev-parse HEAD)\`"
+            echo "- Verify a download: \`sha256sum -c SHA256SUMS.txt\` or \`gh attestation verify <file> --repo ${GITHUB_REPOSITORY}\`"
+          } > notes.md
+          cat notes.md
+      - name: Create or update the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          flags=()
+          [[ "${{ needs.verify.outputs.prerelease }}" == "true" ]] && flags+=(--prerelease)
+          title="Plainread ${{ needs.verify.outputs.version }} (build ${{ github.run_number }})"
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release edit "$TAG" --title "$title" --notes-file notes.md "${flags[@]}"
+            gh release upload "$TAG" assets/* --clobber
+          else
+            gh release create "$TAG" assets/* --title "$title" --notes-file notes.md --verify-tag "${flags[@]}"
+          fi
+
+  pypi:
+    name: Publish to PyPI (optional)
+    # Turn on by creating the repository variable PUBLISH_TO_PYPI=true and
+    # adding this workflow as a trusted publisher on pypi.org.
+    if: vars.PUBLISH_TO_PYPI == 'true'
+    needs: [verify, publish]
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v6
+        with:
+          name: release-python
+          path: dist
+      - uses: pypa/gh-action-pypi-publish@release/v1

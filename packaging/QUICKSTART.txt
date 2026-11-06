@@ -1,0 +1,31 @@
+PLAINREAD - understand hard letters in plain words
+===================================================
+
+Plainread runs on your own computer. Your letters are never sent over the internet.
+
+START
+  Windows:  double-click plainread.exe
+            (if Windows SmartScreen appears, click "More info", then "Run anyway")
+  Mac:      right-click "plainread", choose Open, then Open again
+            (or in Terminal: xattr -d com.apple.quarantine plainread && ./plainread)
+  Linux:    ./plainread
+
+A window with a short message stays open while Plainread runs. Your web browser
+opens at http://127.0.0.1:8765 - add your letter there. Close the window to stop.
+
+READING PHOTOS
+  To read photos of letters, install the free Tesseract OCR program once:
+  Windows:  https://github.com/UB-Mannheim/tesseract/wiki
+  Mac:      brew install tesseract
+  Linux:    sudo apt install tesseract-ocr
+  Without it you can still paste the text of a letter, or open a PDF.
+
+BETTER SUMMARIES AND FULL TRANSLATION (optional)
+  Install Ollama (https://ollama.com), run:  ollama pull gemma3:4b
+  then tick "Use local AI" in Plainread.
+
+CHECK YOUR SETUP
+  plainread doctor
+
+Plainread helps you understand a letter. It is not legal, medical or money advice.
+More help: https://github.com/lobojoel2003/Plainread

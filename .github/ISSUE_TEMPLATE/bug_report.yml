@@ -1,0 +1,47 @@
+name: Bug report
+description: Something in Plainread does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make Plainread better.
+        **Please do not paste a real letter or any personal information.** If a letter is
+        explained wrongly, change the names, numbers and addresses first, or describe it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what did Plainread do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: letter
+    attributes:
+      label: Example text (made up or with personal details removed)
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Version and build
+      description: From the app footer, `plainread --version`, or /api/health
+      placeholder: 1.0.0 (build 12, commit abc1234)
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How do you run Plainread?
+      options:
+        - Desktop app (Windows)
+        - Desktop app (macOS)
+        - Desktop app (Linux)
+        - Docker
+        - pip / Python
+    validations:
+      required: true
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Was "Use local AI" turned on?
+      options: ["No", "Yes (Ollama)", "Yes (other local server)"]
