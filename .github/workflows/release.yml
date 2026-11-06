@@ -218,7 +218,7 @@ jobs:
           version="${{ needs.verify.outputs.version }}"
           image="ghcr.io/${GITHUB_REPOSITORY,,}"
           {
-            python scripts/release_notes.py "$version"
+            python3 scripts/release_notes.py "$version"
             echo
             echo "## Download"
             echo
