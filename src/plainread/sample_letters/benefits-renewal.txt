@@ -1,0 +1,26 @@
+STATE OF WESTMARA
+DEPARTMENT OF HUMAN SERVICES
+Office of Eligibility Determination
+PO Box 4410, Capitol City, WS 55100
+
+Notice Date: {{d:-3}}
+Case Number: 4471-0093-22
+
+Dear Luis Ortega:
+
+RE: Annual Renewal of Your Health Coverage (Westmara HealthCare Program)
+
+It is time to renew your Westmara HealthCare coverage. Pursuant to state regulations, the Department is required to redetermine your household's eligibility at least once every twelve (12) months.
+
+You must complete, sign and return the enclosed renewal form by {{d:+27}}. You may return the form by mail, by fax to (608) 555-0129, or online at www.westmarabenefits.example.
+
+Please include proof of income for every person in your household for the last thirty (30) days, such as pay stubs or a letter from your employer.
+
+If we do not receive your completed renewal form, your health coverage will end on {{d:+57}}.
+
+If you have questions, call your caseworker at (608) 555-0128. If you are deaf or hard of hearing, call TTY 711.
+
+You have the right to ask for a fair hearing if you disagree with any decision we make about your case. You can get free help from Westmara Legal Aid at 1-800-555-0190.
+
+Sincerely,
+Office of Eligibility Determination

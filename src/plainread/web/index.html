@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Understand hard letters in plain words. Plainread runs on your own device, so your letter stays private.">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="referrer" content="no-referrer">
+  <title>Plainread</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M9 4.5h6l1.5 2H20a1.5 1.5 0 0 1 1.5 1.5v10A1.5 1.5 0 0 1 20 19.5H4A1.5 1.5 0 0 1 2.5 18V8A1.5 1.5 0 0 1 4 6.5h3.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2.8h8l4.2 4.2V20a1.2 1.2 0 0 1-1.2 1.2H6A1.2 1.2 0 0 1 4.8 20V4A1.2 1.2 0 0 1 6 2.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M13.8 3v4.4h4.4M8 12h8M8 15.5h8M8 9h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-type" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 10h1M9.5 10h1M13 10h1M16.5 10h1M7 14h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-speak" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3.5h10V8M7 17H4.5A1.5 1.5 0 0 1 3 15.5v-6A1.5 1.5 0 0 1 4.5 8h15A1.5 1.5 0 0 1 21 9.5v6a1.5 1.5 0 0 1-1.5 1.5H17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><rect x="7" y="13.5" width="10" height="7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M10 6l-6 6 6 6M4.5 12H20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M5 17.5c2.6-.4 4-2.2 4-5V7H4v5h3M15 17.5c2.6-.4 4-2.2 4-5V7h-5v5h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3a1.6 1.6 0 0 1-1.7 1.6A16.5 16.5 0 0 1 5 5.2a1.6 1.6 0 0 1 1.6-1.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5l9.5 16.5h-19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2v.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main" data-i18n="ui.skip_to_content">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/" aria-label="Plainread">
+        <img src="/static/icon.svg" alt="" width="40" height="40">
+        <span class="brand__name">Plainread</span>
+      </a>
+      <label class="lang">
+        <span class="lang__label" data-i18n="ui.language_label">Show results in</span>
+        <select id="language" autocomplete="off"></select>
+      </label>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="start" class="view" aria-labelledby="tagline">
+      <h1 id="tagline" data-i18n="ui.app_tagline">Understand your letter in plain words.</h1>
+      <p class="privacy"><svg class="icon"><use href="#i-lock"/></svg>
+        <span><strong data-i18n="ui.privacy_badge">Your letter stays on this device.</strong>
+        <span data-i18n="ui.privacy_detail">Plainread runs on your own computer. Your letter is never sent over the internet.</span></span>
+      </p>
+
+      <div class="card">
+        <h2 class="step"><span class="step__num" aria-hidden="true">1</span><span data-i18n="ui.step_add">Add your letter</span></h2>
+        <div class="choices">
+          <label class="choice" for="camera-input">
+            <svg class="icon icon--big"><use href="#i-camera"/></svg>
+            <span data-i18n="ui.take_photo">Take a photo</span>
+          </label>
+          <input id="camera-input" class="visually-hidden" type="file" accept="image/*" capture="environment">
+          <label class="choice" for="file-input">
+            <svg class="icon icon--big"><use href="#i-file"/></svg>
+            <span data-i18n="ui.upload_file">Choose a photo or PDF</span>
+          </label>
+          <input id="file-input" class="visually-hidden" type="file" accept="image/*,application/pdf,.pdf,.txt" multiple>
+          <button class="choice" id="paste-toggle" type="button" aria-expanded="false" aria-controls="paste-area">
+            <svg class="icon icon--big"><use href="#i-type"/></svg>
+            <span data-i18n="ui.paste_text">Paste the text</span>
+          </button>
+        </div>
+
+        <div id="dropzone" class="dropzone" data-i18n="ui.drop_here">Or drag a photo or PDF here.</div>
+
+        <div id="pages" class="pages" hidden>
+          <p id="pages-count" class="pages__count" aria-live="polite"></p>
+          <ul id="page-list" class="page-list"></ul>
+        </div>
+
+        <div id="paste-area" class="paste" hidden>
+          <label class="visually-hidden" for="letter-text" data-i18n="ui.paste_text">Paste the text</label>
+          <textarea id="letter-text" rows="10" data-i18n-placeholder="ui.paste_placeholder" spellcheck="false"></textarea>
+        </div>
+
+        <div class="sample">
+          <label for="sample-select" data-i18n="ui.try_sample">Try a sample letter</label>
+          <select id="sample-select">
+            <option value="" data-i18n="ui.choose_sample">Choose a sample</option>
+          </select>
+        </div>
+
+        <div class="ai">
+          <label class="switch">
+            <input type="checkbox" id="use-ai">
+            <span class="switch__track" aria-hidden="true"></span>
+            <span data-i18n="ui.use_ai">Use local AI for better summaries and full translation</span>
+          </label>
+          <p id="ai-status" class="hint"></p>
+        </div>
+
+        <p id="start-error" class="error" role="alert" hidden></p>
+        <button id="explain" class="btn btn--primary btn--big" type="button" data-i18n="ui.explain_button">Explain my letter</button>
+      </div>
+    </section>
+
+    <section id="working" class="view working" hidden aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p data-i18n="ui.working">Reading your letter. This can take a minute.</p>
+    </section>
+
+    <section id="results" class="view" hidden>
+      <div class="toolbar" role="toolbar">
+        <button id="again" class="btn" type="button"><svg class="icon"><use href="#i-back"/></svg><span data-i18n="ui.start_over">Start over</span></button>
+        <button id="read-all" class="btn" type="button"><svg class="icon"><use href="#i-speak"/></svg><span data-i18n="ui.read_aloud">Read aloud</span></button>
+        <button id="calendar" class="btn" type="button"><svg class="icon"><use href="#i-calendar"/></svg><span data-i18n="ui.add_to_calendar">Add dates to my calendar</span></button>
+        <button id="print" class="btn" type="button"><svg class="icon"><use href="#i-print"/></svg><span data-i18n="ui.print">Print</span></button>
+      </div>
+      <div id="result-body"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="ui.footer">Plainread is free and open source. It works without the internet.</p>
+    <p id="version" class="footer__version"></p>
+  </footer>
+</body>
+</html>

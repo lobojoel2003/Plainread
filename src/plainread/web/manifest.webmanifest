@@ -1,0 +1,12 @@
+{
+  "name": "Plainread",
+  "short_name": "Plainread",
+  "description": "Understand hard letters in plain words. Private and offline.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f7f4",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

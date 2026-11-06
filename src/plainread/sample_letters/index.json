@@ -1,0 +1,6 @@
+[
+  {"id": "court-summons", "title": "Court summons (small claims)"},
+  {"id": "hospital-bill", "title": "Hospital bill"},
+  {"id": "benefits-renewal", "title": "Health coverage renewal"},
+  {"id": "utility-shutoff", "title": "Electricity shut-off notice"}
+]

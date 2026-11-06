@@ -1,0 +1,828 @@
+[
+ {
+  "term": "default judgment",
+  "aliases": [
+   "judgment by default",
+   "default judgement"
+  ],
+  "en": "The court decides against you because you did not answer or did not come to court.",
+  "es": "El tribunal decide en su contra porque usted no respondió o no fue a la corte."
+ },
+ {
+  "term": "summons",
+  "aliases": [],
+  "en": "An official paper that tells you that you are being sued or must come to court.",
+  "es": "Un papel oficial que le dice que lo están demandando o que debe ir a la corte."
+ },
+ {
+  "term": "complaint",
+  "aliases": [],
+  "en": "The paper that explains why someone is suing you and what they want.",
+  "es": "El papel que explica por qué alguien lo demanda y qué quiere.",
+  "types": [
+   "court",
+   "debt",
+   "housing"
+  ]
+ },
+ {
+  "term": "plaintiff",
+  "aliases": [
+   "petitioner"
+  ],
+  "en": "The person or company that started the court case.",
+  "es": "La persona o empresa que empezó el caso en la corte."
+ },
+ {
+  "term": "defendant",
+  "aliases": [
+   "respondent"
+  ],
+  "en": "The person the court case is against.",
+  "es": "La persona contra quien es el caso en la corte."
+ },
+ {
+  "term": "answer",
+  "aliases": [
+   "written answer",
+   "written response"
+  ],
+  "en": "Your written reply to the court that says your side of the story.",
+  "es": "Su respuesta por escrito a la corte donde cuenta su versión.",
+  "types": [
+   "court",
+   "debt",
+   "housing"
+  ]
+ },
+ {
+  "term": "hearing",
+  "aliases": [
+   "fair hearing",
+   "administrative hearing"
+  ],
+  "en": "A meeting where a judge or officer listens to both sides and makes a decision.",
+  "es": "Una reunión donde un juez o funcionario escucha a ambas partes y toma una decisión.",
+  "types": [
+   "court",
+   "benefits",
+   "employment",
+   "housing",
+   "debt",
+   "school",
+   "immigration",
+   "health_insurance",
+   "insurance",
+   "tax",
+   "utility"
+  ]
+ },
+ {
+  "term": "appeal",
+  "aliases": [],
+  "en": "Asking for a decision to be looked at again and changed.",
+  "es": "Pedir que revisen una decisión y la cambien."
+ },
+ {
+  "term": "garnishment",
+  "aliases": [
+   "wage garnishment",
+   "garnish",
+   "garnished"
+  ],
+  "en": "Money is taken from your paycheck or bank account to pay a debt.",
+  "es": "Le quitan dinero de su sueldo o de su cuenta bancaria para pagar una deuda."
+ },
+ {
+  "term": "exemption",
+  "aliases": [
+   "exempt"
+  ],
+  "en": "Money or property the law protects, so it cannot be taken.",
+  "es": "Dinero o bienes que la ley protege y que no se pueden quitar."
+ },
+ {
+  "term": "lien",
+  "aliases": [],
+  "en": "A legal claim on your property until a debt is paid.",
+  "es": "Un derecho legal sobre sus bienes hasta que pague una deuda."
+ },
+ {
+  "term": "eviction",
+  "aliases": [
+   "evict",
+   "evicted",
+   "unlawful detainer"
+  ],
+  "en": "When a landlord goes to court to make a tenant move out.",
+  "es": "Cuando el dueño va a la corte para que el inquilino se mude."
+ },
+ {
+  "term": "notice to quit",
+  "aliases": [
+   "notice to vacate",
+   "pay or quit"
+  ],
+  "en": "A paper from a landlord telling you to fix a problem or move out by a certain date.",
+  "es": "Un papel del dueño que le dice que arregle un problema o se mude antes de una fecha."
+ },
+ {
+  "term": "tenant",
+  "aliases": [
+   "lessee"
+  ],
+  "en": "The person who rents a home.",
+  "es": "La persona que alquila una vivienda."
+ },
+ {
+  "term": "landlord",
+  "aliases": [
+   "lessor",
+   "property manager"
+  ],
+  "en": "The person or company you rent your home from.",
+  "es": "La persona o empresa que le alquila su vivienda."
+ },
+ {
+  "term": "lease",
+  "aliases": [
+   "rental agreement"
+  ],
+  "en": "The rental contract between you and your landlord.",
+  "es": "El contrato de alquiler entre usted y el dueño."
+ },
+ {
+  "term": "arrears",
+  "aliases": [
+   "past due",
+   "delinquent"
+  ],
+  "en": "Money that should already have been paid.",
+  "es": "Dinero que ya se debería haber pagado."
+ },
+ {
+  "term": "affidavit",
+  "aliases": [
+   "sworn statement",
+   "declaration"
+  ],
+  "en": "A written statement you promise is true.",
+  "es": "Una declaración por escrito que usted promete que es verdad."
+ },
+ {
+  "term": "notarized",
+  "aliases": [
+   "notary"
+  ],
+  "en": "Signed in front of an official who checks who you are.",
+  "es": "Firmado frente a un funcionario que confirma quién es usted."
+ },
+ {
+  "term": "subpoena",
+  "aliases": [],
+  "en": "An order to come to court or to hand over papers.",
+  "es": "Una orden para ir a la corte o entregar documentos."
+ },
+ {
+  "term": "jurisdiction",
+  "aliases": [],
+  "en": "The area or kind of case a court is allowed to handle.",
+  "es": "El área o tipo de caso que un tribunal puede manejar."
+ },
+ {
+  "term": "continuance",
+  "aliases": [
+   "postponement",
+   "postpone"
+  ],
+  "en": "Moving a court date or appointment to a later day.",
+  "es": "Cambiar una fecha de corte o cita para otro día más tarde."
+ },
+ {
+  "term": "pro se",
+  "aliases": [
+   "self-represented"
+  ],
+  "en": "Going to court without a lawyer.",
+  "es": "Ir a la corte sin abogado."
+ },
+ {
+  "term": "counsel",
+  "aliases": [
+   "attorney"
+  ],
+  "en": "A lawyer.",
+  "es": "Un abogado."
+ },
+ {
+  "term": "legal aid",
+  "aliases": [
+   "legal services"
+  ],
+  "en": "Free or low-cost help from a lawyer.",
+  "es": "Ayuda gratis o de bajo costo de un abogado."
+ },
+ {
+  "term": "judgment",
+  "aliases": [
+   "judgement"
+  ],
+  "en": "The court's final decision in a case.",
+  "es": "La decisión final de la corte en un caso.",
+  "types": [
+   "court",
+   "debt",
+   "housing"
+  ]
+ },
+ {
+  "term": "settlement",
+  "aliases": [],
+  "en": "An agreement that ends a dispute without a trial.",
+  "es": "Un acuerdo que termina un conflicto sin juicio."
+ },
+ {
+  "term": "jury duty",
+  "aliases": [
+   "jury service",
+   "juror"
+  ],
+  "en": "Being called to help decide a court case as part of a jury.",
+  "es": "Ser llamado para ayudar a decidir un caso en la corte como parte de un jurado."
+ },
+ {
+  "term": "citation",
+  "aliases": [],
+  "en": "A ticket or official notice that you broke a rule.",
+  "es": "Una multa o aviso oficial de que usted rompió una regla."
+ },
+ {
+  "term": "arraignment",
+  "aliases": [],
+  "en": "Your first court date, where you hear the charges and answer them.",
+  "es": "Su primera cita en la corte, donde escucha los cargos y responde."
+ },
+ {
+  "term": "plea",
+  "aliases": [],
+  "en": "Your answer to a charge, such as guilty or not guilty.",
+  "es": "Su respuesta a un cargo, como culpable o no culpable."
+ },
+ {
+  "term": "deductible",
+  "aliases": [],
+  "en": "The amount you pay for health care each year before your insurance starts to pay.",
+  "es": "Lo que usted paga cada año por atención médica antes de que su seguro empiece a pagar."
+ },
+ {
+  "term": "copay",
+  "aliases": [
+   "copayment",
+   "co-pay"
+  ],
+  "en": "A set amount you pay for a visit or medicine.",
+  "es": "Una cantidad fija que usted paga por una visita o medicina."
+ },
+ {
+  "term": "coinsurance",
+  "aliases": [
+   "co-insurance"
+  ],
+  "en": "Your share of the cost, as a percent, after you pay the deductible.",
+  "es": "Su parte del costo, en porcentaje, después de pagar el deducible."
+ },
+ {
+  "term": "premium",
+  "aliases": [],
+  "en": "The amount you pay every month to have insurance.",
+  "es": "Lo que usted paga cada mes para tener seguro."
+ },
+ {
+  "term": "explanation of benefits",
+  "aliases": [
+   "eob"
+  ],
+  "en": "A paper from your insurance that shows what it paid. It is not a bill.",
+  "es": "Un papel de su seguro que muestra lo que pagó. No es una factura."
+ },
+ {
+  "term": "prior authorization",
+  "aliases": [
+   "preauthorization",
+   "pre-authorization",
+   "precertification"
+  ],
+  "en": "Approval your insurance must give before you get a service.",
+  "es": "Permiso que su seguro debe dar antes de recibir un servicio."
+ },
+ {
+  "term": "out-of-network",
+  "aliases": [
+   "out of network",
+   "non-participating"
+  ],
+  "en": "A doctor or hospital that does not have a contract with your insurance, so it may cost more.",
+  "es": "Un médico u hospital sin contrato con su seguro, así que puede costar más."
+ },
+ {
+  "term": "in-network",
+  "aliases": [
+   "in network",
+   "participating provider"
+  ],
+  "en": "A doctor or hospital that has a contract with your insurance.",
+  "es": "Un médico u hospital que tiene contrato con su seguro."
+ },
+ {
+  "term": "medically necessary",
+  "aliases": [
+   "medical necessity"
+  ],
+  "en": "Health care that is needed to treat your illness or injury.",
+  "es": "Atención médica necesaria para tratar su enfermedad o lesión."
+ },
+ {
+  "term": "claim",
+  "aliases": [],
+  "en": "A request for payment sent to an insurance company or benefits office.",
+  "es": "Una solicitud de pago enviada a una aseguradora u oficina de beneficios.",
+  "types": [
+   "insurance",
+   "health_insurance",
+   "employment",
+   "benefits",
+   "medical_bill"
+  ]
+ },
+ {
+  "term": "denial",
+  "aliases": [
+   "denied",
+   "adverse determination",
+   "adverse benefit determination"
+  ],
+  "en": "A decision to say no to your request or claim.",
+  "es": "Una decisión de decir que no a su solicitud o reclamo."
+ },
+ {
+  "term": "external review",
+  "aliases": [
+   "independent review"
+  ],
+  "en": "A review of an insurance decision by someone outside the insurance company.",
+  "es": "Una revisión de la decisión del seguro por alguien de fuera de la aseguradora."
+ },
+ {
+  "term": "grievance",
+  "aliases": [],
+  "en": "A formal complaint.",
+  "es": "Una queja formal."
+ },
+ {
+  "term": "beneficiary",
+  "aliases": [
+   "enrollee"
+  ],
+  "en": "The person who gets the benefits or insurance.",
+  "es": "La persona que recibe los beneficios o el seguro."
+ },
+ {
+  "term": "policyholder",
+  "aliases": [
+   "insured"
+  ],
+  "en": "The person who owns the insurance policy.",
+  "es": "La persona dueña de la póliza de seguro."
+ },
+ {
+  "term": "policy",
+  "aliases": [],
+  "en": "Your insurance contract.",
+  "es": "Su contrato de seguro.",
+  "types": [
+   "insurance",
+   "health_insurance"
+  ]
+ },
+ {
+  "term": "lapse",
+  "aliases": [
+   "lapsed"
+  ],
+  "en": "When your coverage stops because a payment was missed.",
+  "es": "Cuando su cobertura se detiene porque faltó un pago."
+ },
+ {
+  "term": "grace period",
+  "aliases": [],
+  "en": "Extra time to pay before something is stopped or a fee is added.",
+  "es": "Tiempo extra para pagar antes de que algo se detenga o se cobre un cargo."
+ },
+ {
+  "term": "itemized statement",
+  "aliases": [
+   "itemized bill"
+  ],
+  "en": "A bill that lists every charge one by one.",
+  "es": "Una factura que muestra cada cargo uno por uno."
+ },
+ {
+  "term": "date of service",
+  "aliases": [
+   "dates of service",
+   "service date"
+  ],
+  "en": "The day you got the medical care.",
+  "es": "El día en que recibió la atención médica."
+ },
+ {
+  "term": "patient responsibility",
+  "aliases": [
+   "patient balance",
+   "your responsibility"
+  ],
+  "en": "The part of the bill you have to pay yourself.",
+  "es": "La parte de la factura que usted debe pagar."
+ },
+ {
+  "term": "adjustment",
+  "aliases": [
+   "contractual adjustment"
+  ],
+  "en": "An amount taken off the bill.",
+  "es": "Una cantidad que se resta de la factura."
+ },
+ {
+  "term": "financial assistance",
+  "aliases": [
+   "charity care",
+   "financial aid"
+  ],
+  "en": "A program that lowers or cancels medical bills for people with low income.",
+  "es": "Un programa que baja o cancela facturas médicas para personas de bajos ingresos."
+ },
+ {
+  "term": "eligibility",
+  "aliases": [
+   "eligible"
+  ],
+  "en": "Whether you meet the rules to get something.",
+  "es": "Si usted cumple las reglas para recibir algo."
+ },
+ {
+  "term": "redetermination",
+  "aliases": [
+   "renewal",
+   "recertification",
+   "annual review"
+  ],
+  "en": "A check to see if you can keep getting your benefits.",
+  "es": "Una revisión para ver si puede seguir recibiendo sus beneficios."
+ },
+ {
+  "term": "verification",
+  "aliases": [
+   "proof"
+  ],
+  "en": "Papers that show something is true, like pay stubs or ID.",
+  "es": "Papeles que muestran que algo es verdad, como talones de pago o identificación."
+ },
+ {
+  "term": "household",
+  "aliases": [],
+  "en": "The people who live and eat together with you.",
+  "es": "Las personas que viven y comen con usted."
+ },
+ {
+  "term": "income",
+  "aliases": [
+   "gross income",
+   "earned income"
+  ],
+  "en": "Money you get, such as pay from work or benefits.",
+  "es": "Dinero que recibe, como el pago del trabajo o beneficios."
+ },
+ {
+  "term": "overpayment",
+  "aliases": [
+   "overpaid"
+  ],
+  "en": "Money you were paid by mistake and may have to pay back.",
+  "es": "Dinero que le pagaron por error y que quizás deba devolver."
+ },
+ {
+  "term": "recoupment",
+  "aliases": [
+   "recoup"
+  ],
+  "en": "Taking back money that was overpaid, often from future payments.",
+  "es": "Recuperar dinero pagado de más, a menudo de pagos futuros."
+ },
+ {
+  "term": "waiver",
+  "aliases": [],
+  "en": "A request to cancel a rule or a debt for you.",
+  "es": "Una solicitud para cancelar una regla o una deuda para usted."
+ },
+ {
+  "term": "claimant",
+  "aliases": [
+   "applicant"
+  ],
+  "en": "The person who asked for the benefit.",
+  "es": "La persona que pidió el beneficio."
+ },
+ {
+  "term": "determination",
+  "aliases": [
+   "decision notice"
+  ],
+  "en": "An official decision.",
+  "es": "Una decisión oficial."
+ },
+ {
+  "term": "retroactive",
+  "aliases": [
+   "retroactively"
+  ],
+  "en": "It counts from an earlier date.",
+  "es": "Cuenta desde una fecha anterior."
+ },
+ {
+  "term": "effective date",
+  "aliases": [],
+  "en": "The day a change starts.",
+  "es": "El día en que empieza un cambio."
+ },
+ {
+  "term": "suspended",
+  "aliases": [
+   "suspension"
+  ],
+  "en": "Stopped for now.",
+  "es": "Detenido por ahora."
+ },
+ {
+  "term": "reinstate",
+  "aliases": [
+   "reinstated",
+   "reinstatement"
+  ],
+  "en": "To start again after being stopped.",
+  "es": "Volver a empezar después de haber sido detenido."
+ },
+ {
+  "term": "allotment",
+  "aliases": [],
+  "en": "The amount of benefits you get each month.",
+  "es": "La cantidad de beneficios que recibe cada mes."
+ },
+ {
+  "term": "penalty",
+  "aliases": [
+   "penalties"
+  ],
+  "en": "Extra money you are charged for breaking a rule or paying late.",
+  "es": "Dinero extra que le cobran por romper una regla o pagar tarde."
+ },
+ {
+  "term": "interest",
+  "aliases": [],
+  "en": "Extra money added to a debt over time.",
+  "es": "Dinero extra que se suma a una deuda con el tiempo.",
+  "types": [
+   "tax",
+   "debt",
+   "medical_bill",
+   "utility"
+  ]
+ },
+ {
+  "term": "installment agreement",
+  "aliases": [
+   "payment plan",
+   "installment plan"
+  ],
+  "en": "An agreement to pay a debt in smaller amounts over time.",
+  "es": "Un acuerdo para pagar una deuda en partes pequeñas con el tiempo."
+ },
+ {
+  "term": "levy",
+  "aliases": [],
+  "en": "Taking your money or property to pay a tax debt.",
+  "es": "Quitar su dinero o bienes para pagar una deuda de impuestos."
+ },
+ {
+  "term": "assessment",
+  "aliases": [
+   "assessed"
+  ],
+  "en": "The amount the office says you owe.",
+  "es": "La cantidad que la oficina dice que usted debe."
+ },
+ {
+  "term": "tax return",
+  "aliases": [],
+  "en": "The form you file each year to report your income and taxes.",
+  "es": "El formulario que presenta cada año para declarar sus ingresos e impuestos."
+ },
+ {
+  "term": "creditor",
+  "aliases": [
+   "original creditor"
+  ],
+  "en": "The company you owe money to.",
+  "es": "La empresa a la que le debe dinero."
+ },
+ {
+  "term": "debt collector",
+  "aliases": [
+   "collection agency",
+   "collections"
+  ],
+  "en": "A company that tries to get you to pay a debt.",
+  "es": "Una empresa que trata de que usted pague una deuda."
+ },
+ {
+  "term": "validation notice",
+  "aliases": [
+   "validation",
+   "verification of the debt"
+  ],
+  "en": "A letter that tells you about a debt and your right to question it.",
+  "es": "Una carta que le informa sobre una deuda y su derecho a cuestionarla."
+ },
+ {
+  "term": "dispute",
+  "aliases": [
+   "disputed"
+  ],
+  "en": "To tell them you think the debt or charge is wrong.",
+  "es": "Decirles que usted cree que la deuda o el cargo está mal."
+ },
+ {
+  "term": "principal",
+  "aliases": [],
+  "en": "The amount you first owed, without interest or fees.",
+  "es": "La cantidad que debía al principio, sin intereses ni cargos.",
+  "types": [
+   "debt",
+   "tax"
+  ]
+ },
+ {
+  "term": "disconnection",
+  "aliases": [
+   "disconnect",
+   "shutoff",
+   "shut off",
+   "termination of service"
+  ],
+  "en": "When the company turns off your service.",
+  "es": "Cuando la compañía corta su servicio."
+ },
+ {
+  "term": "deposit",
+  "aliases": [
+   "security deposit"
+  ],
+  "en": "Money you pay up front that may be returned later.",
+  "es": "Dinero que paga por adelantado y que pueden devolverle después.",
+  "types": [
+   "utility",
+   "housing"
+  ]
+ },
+ {
+  "term": "medical certificate",
+  "aliases": [
+   "medical certification"
+  ],
+  "en": "A note from a doctor that says a person in the home is seriously ill.",
+  "es": "Una nota del médico que dice que alguien en la casa está muy enfermo."
+ },
+ {
+  "term": "biometrics",
+  "aliases": [
+   "biometric"
+  ],
+  "en": "Your fingerprints, photo and signature taken for your records.",
+  "es": "Sus huellas, foto y firma tomadas para su expediente."
+ },
+ {
+  "term": "receipt notice",
+  "aliases": [],
+  "en": "A letter that says your application was received.",
+  "es": "Una carta que dice que recibieron su solicitud."
+ },
+ {
+  "term": "petition",
+  "aliases": [],
+  "en": "A formal written request.",
+  "es": "Una solicitud formal por escrito."
+ },
+ {
+  "term": "truancy",
+  "aliases": [
+   "truant",
+   "unexcused absence",
+   "unexcused absences",
+   "chronic absence"
+  ],
+  "en": "Missing school without an accepted reason.",
+  "es": "Faltar a la escuela sin una razón aceptada."
+ },
+ {
+  "term": "guardian",
+  "aliases": [
+   "legal guardian"
+  ],
+  "en": "An adult who is legally responsible for a child.",
+  "es": "Un adulto que es legalmente responsable de un niño."
+ },
+ {
+  "term": "reasonable accommodation",
+  "aliases": [
+   "accommodation"
+  ],
+  "en": "A change that helps a person with a disability take part.",
+  "es": "Un cambio que ayuda a una persona con discapacidad a participar."
+ },
+ {
+  "term": "interpreter",
+  "aliases": [
+   "language assistance",
+   "interpretation"
+  ],
+  "en": "A person who helps you understand and speak in your language.",
+  "es": "Una persona que le ayuda a entender y hablar en su idioma."
+ },
+ {
+  "term": "TTY",
+  "aliases": [
+   "TDD",
+   "relay service"
+  ],
+  "en": "A phone service for people who are deaf or hard of hearing.",
+  "es": "Un servicio telefónico para personas sordas o con problemas de audición."
+ },
+ {
+  "term": "nondiscrimination",
+  "aliases": [
+   "non-discrimination",
+   "discriminate"
+  ],
+  "en": "They must treat everyone fairly, no matter their race, sex, disability or age.",
+  "es": "Deben tratar a todos de forma justa, sin importar raza, sexo, discapacidad o edad."
+ },
+ {
+  "term": "fasting",
+  "aliases": [
+   "clear liquids"
+  ],
+  "en": "Not eating (and sometimes not drinking) before a test or procedure.",
+  "es": "No comer (y a veces no beber) antes de un examen o procedimiento."
+ },
+ {
+  "term": "procedure",
+  "aliases": [],
+  "en": "A medical test or treatment.",
+  "es": "Un examen o tratamiento médico.",
+  "types": [
+   "medical",
+   "medical_bill",
+   "health_insurance"
+  ]
+ },
+ {
+  "term": "sedation",
+  "aliases": [
+   "anesthesia"
+  ],
+  "en": "Medicine that makes you sleepy or relaxed during a procedure.",
+  "es": "Medicina que le da sueño o lo relaja durante un procedimiento."
+ },
+ {
+  "term": "escrow",
+  "aliases": [],
+  "en": "Money held by someone else until it is time to pay a bill.",
+  "es": "Dinero que guarda otra persona hasta que es hora de pagar una cuenta."
+ },
+ {
+  "term": "unemployment insurance",
+  "aliases": [
+   "unemployment benefits",
+   "unemployment compensation"
+  ],
+  "en": "Money paid to you for a while after you lose your job.",
+  "es": "Dinero que le pagan por un tiempo después de perder su trabajo."
+ },
+ {
+  "term": "fraud",
+  "aliases": [
+   "misrepresentation"
+  ],
+  "en": "Lying or hiding facts on purpose to get money or benefits.",
+  "es": "Mentir u ocultar hechos a propósito para recibir dinero o beneficios."
+ }
+]

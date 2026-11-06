@@ -1,0 +1,21 @@
+GRANITE VALLEY ELECTRIC COOPERATIVE
+88 Powerline Road, Granite Valley, WS 55830
+Customer Care: 1-888-555-0151   TTY: 1-888-555-0152
+
+FINAL NOTICE OF DISCONNECTION
+
+Date: {{d:-3}}
+Account Number: 0042-881-7730
+Service Address: 17 Birch Lane, Apt 2, Granite Valley
+
+Your electric account is past due. The past-due amount is $412.37.
+
+Unless payment of the past-due amount is received by {{d:+11}}, your electric service will be disconnected on or after {{d:+13}}.
+
+To avoid disconnection, pay the past-due amount online at www.gvec.example, by phone at 1-888-555-0151, or at any authorized payment location.
+
+If someone in your home has a serious medical condition, you may be able to delay disconnection. Ask your doctor to send us a medical certificate before your disconnection date.
+
+You may also be eligible for a payment plan or for energy assistance. Call us to learn more.
+
+A reconnection fee of $35.00 will be charged if your service is disconnected.
